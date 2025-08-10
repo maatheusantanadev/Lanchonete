@@ -80,7 +80,7 @@ public class Produto {
         try {
             Path origem = Paths.get(caminhoOrigem);
             Path nomeArquivo = origem.getFileName();
-            Path pastaDestino = Paths.get("C:/Users/theu_/IdeaProjects/Testes/atv01_jefte");
+            Path pastaDestino = Paths.get("//Caminho de destino que deseja//");
             Path destino = pastaDestino.resolve(nomeArquivo);
 
             Files.move(origem, destino, StandardCopyOption.REPLACE_EXISTING);
@@ -100,3 +100,4 @@ public class Produto {
                 "Imagem: " + imagem;
     }
 }
+
